@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "keycloak-js": "^5.0.0",
+    "navi": "^0.12.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-keycloak": "^5.0.0-alpha.2",
+    "react-navi": "^0.12.4",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
@@ -22,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-dev-utils": "^8.0.0"
+  }
 }

@@ -1,0 +1,8 @@
+{
+    "realm": "valeria",
+    "auth-server-url": "https://keycloak-valeriademo.svd-pca.svc.ulaval.ca/auth",
+    "ssl-required": "all",
+    "resource": "portal",
+    "public-client": true,
+    "confidential-port": 0
+  }
