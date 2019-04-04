@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@patternfly/patternfly": "^1.0.250",
+    "@patternfly/react-core": "^2.10.9",
     "keycloak-js": "^5.0.0",
     "navi": "^0.12.4",
     "react": "^16.8.6",

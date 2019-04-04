@@ -1,10 +1,12 @@
 import { mount, route, lazy, map, redirect } from 'navi';
 import React, { Suspense } from 'react';
 import { Router, View } from 'react-navi';
+import '@patternfly/react-core/dist/styles/base.css';
 
 import { withKeycloak } from 'react-keycloak';
 
 import HomePage from '../pages/Home';
+import Navigation from '../pages/Navigation';
 
 import { withAuthentication } from './utils';
 
@@ -15,6 +17,12 @@ const routes = mount({
       title: 'Home',
       view: <HomePage />
     })
+  ),
+  '/navigation': 
+    route({
+      title: 'Navigation',
+      view: <Navigation />
+    }
   ),
   '/login': map(async (request, context) =>
     context.isAuthenticated
