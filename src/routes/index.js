@@ -5,23 +5,23 @@ import '@patternfly/react-core/dist/styles/base.css';
 
 import { withKeycloak } from 'react-keycloak';
 
-import HomePage from '../pages/Home';
-import Navigation from '../pages/Navigation';
+import Oldhome from '../pages/Oldhome';
+import Home from '../pages/Home';
 
 import { withAuthentication } from './utils';
 
 // Define your routes
 const routes = mount({
-  '/home': withAuthentication(
+  '/oldhome': withAuthentication(
     route({
       title: 'Home',
-      view: <HomePage />
+      view: <Oldhome />
     })
   ),
-  '/navigation': 
+  '/home': 
     route({
-      title: 'Navigation',
-      view: <Navigation />
+      title: 'Home',
+      view: <Home />
     }
   ),
   '/login': map(async (request, context) =>
